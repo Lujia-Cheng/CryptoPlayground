@@ -1,0 +1,1 @@
+This archive contains my final project for INFSCI 2170 Cryptography: a Twofish block cipher implementation in Java, along with some self-written encryption/decryption tools that assisted me throughout homework, quizzes, exams, and leisure.

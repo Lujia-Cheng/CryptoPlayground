@@ -1,8 +1,8 @@
-# Final Report
+# First rule of cryptography: don't implement your own cryptography.
 
-## ~~Link to my source code (host on my Pitt OneDrive)~~
+> Don't trust mine either. This is a project for a class. And I'm not a cryptographer. For proper implementation & more info please see the origin paper on Schneier's [website](https://www.schneier.com/academic/twofish/)
 
-No longer needed since the code is now hosted on GitHub.
+> Secitions below are adapted from `Project Final Report.pdf`
 
 ## Intro
 
@@ -18,7 +18,7 @@ In my demo, I use a pre-determined key thus able to obtain a pre-calculated roun
 
 # How to run the project
 
-> Assumed Java is already installed
+> Assumed Java is installed
 
 File [Twofish.java](Twofish.java) can be open and editor with any text editor.
 
@@ -31,15 +31,17 @@ javac Twofish.java
 java Twofish
 ```
 
-# Source
+# Structure of Twofish
 
-Origin Paper:
-[Twofish: A 128-Bit Block Cipher by Schnier, Kelsey, et al.](https://www.schneier.com/wp-content/uploads/2016/02/paper-twofish-paper.pdf)
+Origin Paper: [Twofish: A 128-Bit Block Cipher by Schnier, Kelsey, et al.](https://www.schneier.com/wp-content/uploads/2016/02/paper-twofish-paper.pdf)
 
-A higher level view of Twofish:
+A high level view of Twofish:
+
 ![Structure](Figure1.jpg)
 
-# Progress
+# Project Progress
+
+> The majority of them are completed. Original function nomination is used.
 
 ## Plaintext & key preparation
 
@@ -52,7 +54,7 @@ A higher level view of Twofish:
 - [x] implemented function g
 - [x] implemented PHT
 - [x] XOR round keys
-- [x] boxing above into one round (function F) and repeating 15 more rounds
+- [x] boxing diffusion & confusion steps into one round (function F) thus easily repeat 15 more rounds
 - [ ] ~~performance test function F~~
 
 ## Finalize
